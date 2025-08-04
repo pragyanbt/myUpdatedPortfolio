@@ -212,7 +212,9 @@ body.dark-theme {
   width: 20px;
   height: 20px;
   background-color: var(--first-color);
-  rotate: -30deg;
+  transform: rotate(-30deg); /* use transform instead of rotate */
+  overflow: hidden;
+  z-index: 2;
 }
 
 .geometric-box::after {
@@ -223,7 +225,9 @@ body.dark-theme {
   border: 3px solid var(--black-color);
   left: -5px;
   top: -5px;
+  box-sizing: border-box;
 }
+
 
 .main {
   overflow: hidden; /* For animation ScrollReveal */
