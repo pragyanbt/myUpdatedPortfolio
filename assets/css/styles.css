@@ -590,38 +590,41 @@ body.dark-theme {
 }
 
 .about__img {
-  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border: 4px solid var(--white-color);
-  z-index: 1;
 }
 
 .about__shadow, 
-.about__line, 
+.about__line,
 .about__box {
   position: absolute;
+  rotate: 15deg;
 }
 
 .about__shadow {
   width: 150px;
   height: 385px;
-  background-color: var(--body-color);
-  top: -2.5rem;
-  right: -3.5rem;
-  border-bottom: 4px solid var(--first-color);
-  transition: background-color .4s; /* for dark mode */
+  background: linear-gradient(180deg, 
+              hsla(0, 0%, 0%, 0) 0%, 
+              hsla(0, 0%, 0%, .4) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  filter: blur(1px);
 }
 
 .about__perfil .geometric-box {
-  top: 1.5rem;
-  right: -2.8rem;
+  top: 2.5rem;
+  right: -1rem;
+  z-index: 10;
 }
 
 .about__line {
-  filter: invert(1);
-  right: -1.25rem;
-  top: 6rem;
-  width: 50px;
-  transition: filter .4s; /* for dark mode */
+  filter: blur(1px);
+  opacity: .5;
 }
 
 .about__box {
@@ -630,6 +633,11 @@ body.dark-theme {
   background-color: var(--first-color);
   right: -.5rem;
   bottom: 1.5rem;
+}
+
+/* Hide decorative lines below About Me section for all screen sizes */
+.about__line {
+  display: none !important;
 }
 
 .about__info {
@@ -1824,14 +1832,31 @@ body.dark-theme {
 
 /*=============== MOBILE RESPONSIVE FIXES ===============*/
 @media screen and (max-width: 768px) {
-  /* Fix geometric-box positioning on mobile */
-  .geometric-box {
-    display: none; /* Hide geometric boxes on mobile to prevent overflow */
+  /* Hide geometric elements only in About Me section */
+  .about__perfil .geometric-box,
+  .about__perfil .geometric-box::after,
+  .about__perfil .geometric-box::before {
+    display: none !important;
+  }
+  
+  /* Hide decorative lines only in About Me section */
+  .about__line {
+    display: none !important;
+  }
+  
+  /* Keep social media icons visible in home section */
+  .home__social {
+    display: grid !important;
+  }
+  
+  .home__social-link {
+    display: grid !important;
   }
   
   /* Ensure proper container overflow handling */
   .container {
     overflow-x: hidden;
+    max-width: 100vw;
   }
   
   /* Fix home section layout on mobile */
@@ -1855,11 +1880,30 @@ body.dark-theme {
   /* Ensure main content doesn't overflow */
   .main {
     overflow-x: hidden;
+    max-width: 100vw;
   }
   
   /* Fix any potential horizontal scroll issues */
   body {
     overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Fix header positioning */
+  .header {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure all sections are properly contained */
+  .section {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Fix any absolute positioned elements that might overflow */
+  * {
+    max-width: 100vw;
   }
 }
 
