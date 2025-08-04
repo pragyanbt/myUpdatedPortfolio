@@ -470,6 +470,40 @@ body.dark-theme {
   background-color: var(--black-color);
 }
 
+/* Mobile responsive fixes for social media icons */
+@media screen and (max-width: 768px) {
+  .home__social {
+    position: absolute;
+    left: -2.5rem; /* Move closer to the image */
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    max-width: 40px; /* Limit width */
+    z-index: 10;
+  }
+  
+  .home__social-link {
+    width: 32px; /* Fixed width */
+    height: 32px; /* Fixed height */
+    font-size: 1rem; /* Smaller icon */
+    padding: 4px; /* Smaller padding */
+    border-radius: 50%; /* Make them circular */
+  }
+  
+  /* Ensure the home profile container doesn't overflow */
+  .home__perfil {
+    position: relative;
+    overflow: visible; /* Allow social icons to be visible */
+    padding-left: 3rem; /* Add space for social icons */
+  }
+  
+  .home__image {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
 .home__info {
   margin-top: 4rem;
 }
