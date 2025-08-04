@@ -1821,3 +1821,73 @@ body.dark-theme {
     right: 3rem;
   }
 }
+
+/*=============== MOBILE RESPONSIVE FIXES ===============*/
+@media screen and (max-width: 768px) {
+  /* Fix geometric-box positioning on mobile */
+  .geometric-box {
+    display: none; /* Hide geometric boxes on mobile to prevent overflow */
+  }
+  
+  /* Ensure proper container overflow handling */
+  .container {
+    overflow-x: hidden;
+  }
+  
+  /* Fix home section layout on mobile */
+  .home__perfil {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Fix about section layout on mobile */
+  .about__perfil {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Fix contact section layout on mobile */
+  .contact__data {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Ensure main content doesn't overflow */
+  .main {
+    overflow-x: hidden;
+  }
+  
+  /* Fix any potential horizontal scroll issues */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home__image {
+    width: 180px;
+  }
+
+  .about__image {
+    width: 170px;
+  }
+
+  .about__shadow {
+    width: 170px;
+    height: 170px;
+  }
+
+  .contact__data {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact__data .section__title-2 {
+    transform: translateX(0);
+  }
+}
