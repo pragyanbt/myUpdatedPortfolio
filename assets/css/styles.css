@@ -212,7 +212,9 @@ body.dark-theme {
   width: 20px;
   height: 20px;
   background-color: var(--first-color);
-  rotate: -30deg;
+  transform: rotate(-30deg); /* use transform instead of rotate */
+  overflow: hidden;
+  z-index: 2;
 }
 
 .geometric-box::after {
@@ -223,7 +225,9 @@ body.dark-theme {
   border: 3px solid var(--black-color);
   left: -5px;
   top: -5px;
+  box-sizing: border-box;
 }
+
 
 .main {
   overflow: hidden; /* For animation ScrollReveal */
@@ -1967,5 +1971,85 @@ body.dark-theme {
 
   .contact__data .section__title-2 {
     transform: translateX(0);
+  }
+}
+
+/*=============== iOS SPECIFIC FIXES ===============*/
+/* Fix for iOS Safari viewport issues */
+@supports (-webkit-touch-callout: none) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Fix for iOS Safari 100vh issue */
+  .main {
+    min-height: -webkit-fill-available;
+  }
+  
+  /* Fix for iOS Safari input zoom */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+  
+  /* Fix for iOS Safari overflow issues */
+  .container {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Fix for iOS Safari position fixed issues */
+  .header {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  /* Fix for iOS Safari flexbox issues */
+  .grid {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+/* iOS specific mobile fixes */
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPhone specific fixes */
+  .home__social {
+    position: absolute;
+    left: -2rem; /* Adjust for iPhone */
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    max-width: 35px;
+    z-index: 10;
+  }
+  
+  .home__social-link {
+    width: 28px; /* Smaller for iPhone */
+    height: 28px;
+    font-size: 0.9rem;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  
+  .home__perfil {
+    position: relative;
+    overflow: visible;
+    padding-left: 2.5rem; /* Adjust for iPhone */
+  }
+  
+  /* Fix iPhone notch area */
+  .header {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  /* Ensure proper touch targets */
+  .nav__toggle,
+  .nav__close,
+  .home__social-link {
+    min-height: 44px;
+    min-width: 44px;
   }
 }
