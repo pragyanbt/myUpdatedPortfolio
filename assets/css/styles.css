@@ -123,6 +123,32 @@ body.dark-theme {
   box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6);
 }
 
+/*========== iOS Safari Navigation Fixes ==========*/
+/* Prevent iOS Safari from showing navigation menu by default */
+.nav__menu {
+  /* Ensure proper stacking context */
+  will-change: transform, opacity, visibility;
+  /* Prevent iOS Safari from showing menu unexpectedly */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for iOS Safari viewport issues */
+@supports (-webkit-touch-callout: none) {
+  .nav__menu {
+    /* Use viewport units for better iOS compatibility */
+    top: -100vh;
+    height: 100vh;
+    /* Prevent iOS Safari from showing menu by default */
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  
+  .nav__menu.show-menu {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .dark-theme .section__title-1::after, 
 .dark-theme .section__title-2::after {
   background-color: hsla(14, 70%, 50%, .2);
@@ -277,6 +303,11 @@ body.dark-theme {
 .nav__toggle {
   font-size: 1.25rem;
   cursor: pointer;
+  /* Prevent iOS Safari touch issues */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Navigation for mobile devices */
@@ -291,6 +322,11 @@ body.dark-theme {
     text-align: center;
     backdrop-filter: blur(8px);
     transition: top .4s;
+    z-index: var(--z-fixed);
+    /* Prevent iOS Safari from showing menu by default */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
 
@@ -369,11 +405,19 @@ body.dark-theme {
   top: 1rem;
   right: 1.5rem;
   cursor: pointer;
+  /* Prevent iOS Safari touch issues */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Show menu */
 .show-menu {
   top: 0;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Add shadow header */
@@ -2051,5 +2095,37 @@ body.dark-theme {
   .home__social-link {
     min-height: 44px;
     min-width: 44px;
+  }
+  
+  /* Fix iOS Safari navigation menu issues */
+  .nav__menu {
+    /* Ensure menu is properly hidden by default on iOS */
+    top: -100vh;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    /* Prevent iOS Safari from showing menu unexpectedly */
+    -webkit-transform: translateY(-100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .nav__menu.show-menu {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  
+  /* Prevent iOS Safari from interfering with navigation */
+  .nav__toggle,
+  .nav__close {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
   }
 }

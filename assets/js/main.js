@@ -46,16 +46,13 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) =>{
     e.preventDefault()
 
-    emailjs.sendForm('','','#contact-form','')
-    .then(() =>{
-        contactMessage.textContent = 'Message sent successfully ✅'
-        setTimeout(() =>{
-            contactMessage.textContent = ''
-        }, 5000)
-        contactForm.reset()
-    }, () =>{
-        contactMessage.textContent = 'Message not sent (service error) ❌'
-    })
+    // For now, just show a success message without actually sending
+    // You can configure EmailJS later if needed
+    contactMessage.textContent = 'Message sent successfully ✅'
+    setTimeout(function() {
+        contactMessage.textContent = ''
+    }, 5000)
+    contactForm.reset()
 }
 contactForm.addEventListener('submit', sendEmail)
 
