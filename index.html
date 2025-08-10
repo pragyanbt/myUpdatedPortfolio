@@ -2,8 +2,12 @@
    <html lang="en">
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="mobile-web-app-capable" content="yes">
+      
+      <!-- Content Security Policy -->
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://api.emailjs.com;">
       <meta name="apple-mobile-web-app-status-bar-style" content="default">
       <meta name="format-detection" content="telephone=no">
 
@@ -25,7 +29,7 @@
             <a href="#" class="nav__logo">
                <span class="nav__logo-circle">PB</span>
 
-               <span class="nav__logo-name">Pragyan Budhathoki.</span>
+               <span class="nav__logo-name">Pragyan Budhathoki</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -40,6 +44,10 @@
 
                   <li class="nav__item">
                      <a href="#about" class="nav__link">About Me</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#experience" class="nav__link">Experience</a>
                   </li>
 
                   <li class="nav__item">
@@ -152,6 +160,90 @@
             </div>
          </section>
 
+         <!--==================== EXPERIENCE ====================-->
+         <section class="experience section" id="experience">
+            <h2 class="section__title-1">
+               <span>My Experience.</span>
+            </h2>
+
+            <div class="experience__container container">
+               <div class="experience__grid">
+                  <!-- Current Experience - Wells Fargo -->
+                  <div class="experience__card">
+                     <div class="experience__header">
+                        <i class="ri-briefcase-line experience__icon"></i>
+                        <h3 class="experience__title">Full Stack Java Developer</h3>
+                     </div>
+                     <div class="experience__content">
+                        <p class="experience__company">Wells Fargo</p>
+                        <p class="experience__duration">May 2024 - Present</p>
+                        <p class="experience__description">
+                           Design, develop, test, and deploy scalable applications using Java, Spring Boot, React.js, 
+                           RESTful APIs, and Microservices architecture in an Agile Scrum environment. Build data pipelines, 
+                           integrate cloud technologies (AWS), and implement CI/CD workflows with Harness.
+                        </p>
+                        <div class="experience__highlights">
+                           <span class="experience__highlight">Java</span>
+                           <span class="experience__highlight">Spring Boot</span>
+                           <span class="experience__highlight">React.js</span>
+                           <span class="experience__highlight">AWS</span>
+                           <span class="experience__highlight">Microservices</span>
+                           <span class="experience__highlight">CI/CD</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Teaching Assistant Experience -->
+                  <div class="experience__card">
+                     <div class="experience__header">
+                        <i class="ri-graduation-cap-line experience__icon"></i>
+                        <h3 class="experience__title">Teaching Assistant – Python Programming</h3>
+                     </div>
+                     <div class="experience__content">
+                        <p class="experience__company">Northern Kentucky University</p>
+                        <p class="experience__duration">January 2022 - May 2023</p>
+                        <p class="experience__description">
+                           Assisted in delivering introductory and intermediate Python programming courses, guiding over 50+ 
+                           students through data structures, algorithms, and object-oriented programming. Provided one-on-one 
+                           mentorship, conducted code reviews, and facilitated collaborative coding sessions.
+                        </p>
+                        <div class="experience__highlights">
+                           <span class="experience__highlight">Python</span>
+                           <span class="experience__highlight">Teaching</span>
+                           <span class="experience__highlight">Mentorship</span>
+                           <span class="experience__highlight">Git/GitHub</span>
+                           <span class="experience__highlight">NumPy/Pandas</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Technical Assistant Experience -->
+                  <div class="experience__card">
+                     <div class="experience__header">
+                        <i class="ri-tools-line experience__icon"></i>
+                        <h3 class="experience__title">Technical Assistant (Intern)</h3>
+                     </div>
+                     <div class="experience__content">
+                        <p class="experience__company">Global Hub Private Limited</p>
+                        <p class="experience__duration">June 2019 - June 2020</p>
+                        <p class="experience__description">
+                           Provided technical support for hardware and software installation, configuration, and troubleshooting. 
+                           Assisted in developing Python-based applications to streamline company operations, implemented 
+                           software management protocols, and collaborated with senior developers on application enhancements.
+                        </p>
+                        <div class="experience__highlights">
+                           <span class="experience__highlight">Python</span>
+                           <span class="experience__highlight">Technical Support</span>
+                           <span class="experience__highlight">Software Development</span>
+                           <span class="experience__highlight">Database Integration</span>
+                           <span class="experience__highlight">Version Control</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
          <!--==================== SKILLS ====================-->
          <section class="skills section">
             <h2 class="section__title-1">
@@ -160,151 +252,100 @@
 
             <div class="skills__container container">
                <div class="skills__grid">
-                  <!-- Programming Languages -->
-                  <div class="skills__category">
-                     <div class="skills__header">
-                        <i class="ri-code-s-slash-line skills__category-icon"></i>
-                        <h3 class="skills__category-title">Programming Languages</h3>
+                  <!-- HTML -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-html5-line"></i>
                      </div>
-                     <div class="skills__items">
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-code-s-slash-line"></i>
-                           </div>
-                           <span class="skills__name">Java</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 90%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-code-s-slash-line"></i>
-                           </div>
-                           <span class="skills__name">Python</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 85%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-code-s-slash-line"></i>
-                           </div>
-                           <span class="skills__name">JavaScript</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 80%"></div>
-                           </div>
-                        </div>
-                     </div>
+                     <span class="skill__name">HTML</span>
                   </div>
 
-                  <!-- Web Technologies -->
-                  <div class="skills__category">
-                     <div class="skills__header">
-                        <i class="ri-global-line skills__category-icon"></i>
-                        <h3 class="skills__category-title">Web Technologies</h3>
+                  <!-- CSS -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-css3-line"></i>
                      </div>
-                     <div class="skills__items">
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-html5-line"></i>
-                           </div>
-                           <span class="skills__name">HTML5</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 95%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-css3-line"></i>
-                           </div>
-                           <span class="skills__name">CSS3</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 90%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-reactjs-line"></i>
-                           </div>
-                           <span class="skills__name">React</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 75%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-bootstrap-line"></i>
-                           </div>
-                           <span class="skills__name">Bootstrap</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 85%"></div>
-                           </div>
-                        </div>
-                     </div>
+                     <span class="skill__name">CSS</span>
                   </div>
 
-                  <!-- Java Full Stack Tools -->
-                  <div class="skills__category">
-                     <div class="skills__header">
-                        <i class="ri-tools-line skills__category-icon"></i>
-                        <h3 class="skills__category-title">Java Full Stack Tools</h3>
+                  <!-- JavaScript -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-javascript-line"></i>
                      </div>
-                     <div class="skills__items">
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-database-2-line"></i>
-                           </div>
-                           <span class="skills__name">MySQL</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 85%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-server-line"></i>
-                           </div>
-                           <span class="skills__name">Spring Boot</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 80%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-code-s-slash-line"></i>
-                           </div>
-                           <span class="skills__name">Maven</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 75%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-git-branch-line"></i>
-                           </div>
-                           <span class="skills__name">Git & GitHub</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 85%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-terminal-line"></i>
-                           </div>
-                           <span class="skills__name">Docker</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 70%"></div>
-                           </div>
-                        </div>
-                        <div class="skills__item">
-                           <div class="skills__icon">
-                              <i class="ri-cloud-line"></i>
-                           </div>
-                           <span class="skills__name">AWS</span>
-                           <div class="skills__level">
-                              <div class="skills__progress" style="width: 65%"></div>
-                           </div>
-                        </div>
+                     <span class="skill__name">JavaScript</span>
+                  </div>
+
+                  <!-- Java -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-code-s-slash-line"></i>
                      </div>
+                     <span class="skill__name">Java</span>
+                  </div>
+
+                  <!-- React -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-reactjs-line"></i>
+                     </div>
+                     <span class="skill__name">React</span>
+                  </div>
+
+                  <!-- Node.js -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-nodejs-line"></i>
+                     </div>
+                     <span class="skill__name">Node.js</span>
+                  </div>
+
+                  <!-- Express.js -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-server-line"></i>
+                     </div>
+                     <span class="skill__name">Express.js</span>
+                  </div>
+
+                  <!-- MongoDB -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-database-2-line"></i>
+                     </div>
+                     <span class="skill__name">MongoDB</span>
+                  </div>
+
+                  <!-- SQL -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-database-line"></i>
+                     </div>
+                     <span class="skill__name">SQL</span>
+                  </div>
+
+                  <!-- Git -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-git-branch-line"></i>
+                     </div>
+                     <span class="skill__name">Git</span>
+                  </div>
+
+                  <!-- Docker -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-terminal-line"></i>
+                     </div>
+                     <span class="skill__name">Docker</span>
+                  </div>
+
+                  <!-- AWS -->
+                  <div class="skill__card">
+                     <div class="skill__icon">
+                        <i class="ri-cloud-line"></i>
+                     </div>
+                     <span class="skill__name">AWS</span>
                   </div>
                </div>
             </div>
@@ -711,7 +752,8 @@
       <script src="assets/js/scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <!-- EmailJS script removed to prevent CSP issues. Add back when configuring EmailJS -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
