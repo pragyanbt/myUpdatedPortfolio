@@ -510,6 +510,8 @@ body.dark-theme {
   margin-bottom: 1.5rem;
 }
 
+
+
 .home__description b {
   background: linear-gradient(90deg, 
             hsla(14, 98%, 50%, .3), 
@@ -852,25 +854,25 @@ body.dark-theme {
 
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1.25rem;
   justify-items: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .skill__card {
   background-color: var(--container-color);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   justify-content: center;
   border: 1px solid var(--border-color);
 }
@@ -881,9 +883,9 @@ body.dark-theme {
 }
 
 .skill__icon {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: var(--first-color);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1470,8 +1472,8 @@ body.dark-theme {
     gap: 2.5rem;
   }
   .skills__grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
   }
   .certifications__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1757,18 +1759,18 @@ body.dark-theme {
   }
 
   .skills__grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
   }
 
   .skill__card {
-    width: 140px;
-    height: 140px;
-    padding: 2rem;
+    width: 130px;
+    height: 130px;
+    padding: 1.75rem;
   }
 
   .skill__icon {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .skill__name {
