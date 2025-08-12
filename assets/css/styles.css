@@ -1065,6 +1065,25 @@ body.dark-theme {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.certifications__verify {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.4s, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certifications__verify:hover {
+  background-color: var(--first-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /*=============== PROJECTS ===============*/
 .projects {
   background-color: var(--container-color);
