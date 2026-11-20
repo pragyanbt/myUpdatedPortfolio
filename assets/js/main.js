@@ -46,13 +46,10 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) =>{
     e.preventDefault()
 
-    // For now, just show a success message without actually sending
-    // You can configure EmailJS later if needed
-    contactMessage.textContent = 'Message sent successfully ✅'
+    contactMessage.textContent = 'This form is not connected. Email pragyanbt2002@gmail.com.'
     setTimeout(function() {
         contactMessage.textContent = ''
-    }, 5000)
-    contactForm.reset()
+    }, 7000)
 }
 contactForm.addEventListener('submit', sendEmail)
 
@@ -110,6 +107,23 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*=============== EXPERIENCE SHOW MORE ===============*/
+document.querySelectorAll('.experience__list').forEach(list => {
+    if (list.children.length <= 6) return
+
+    const button = document.createElement('button')
+    button.type = 'button'
+    button.className = 'experience__more'
+    button.textContent = 'Show more'
+    button.setAttribute('aria-expanded', 'false')
+    button.addEventListener('click', () => {
+        const open = list.classList.toggle('is-expanded')
+        button.textContent = open ? 'Show less' : 'Show more'
+        button.setAttribute('aria-expanded', String(open))
+    })
+    list.after(button)
+})
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -123,4 +137,4 @@ sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin: 'right'})
 sr.reveal(`.home__name, .home__info, 
             .about__container .section__title-1, .about__info, 
             .contact__social, .contact__data`, {origin: 'left'})
-sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.services__card, .projects__feature, .projects__mini`, {interval: 100})

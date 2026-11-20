@@ -43,11 +43,15 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="#about" class="nav__link">About Me</a>
+                     <a href="#about" class="nav__link">About</a>
                   </li>
 
                   <li class="nav__item">
                      <a href="#experience" class="nav__link">Experience</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#education" class="nav__link">Education</a>
                   </li>
 
                   <li class="nav__item">
@@ -96,10 +100,6 @@
                   </div>
 
                   <div class="home__social">
-                     <a href="https://www.facebook.com/pragyan.pragyan.865083/" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-line"></i>
-                     </a>
-
                      <a href="https://www.linkedin.com/in/pragyan-budhathoki/" target="_blank" class="home__social-link">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
@@ -107,12 +107,16 @@
                      <a href="https://github.com/pragyanbt" target="_blank" class="home__social-link">
                         <i class="ri-github-line"></i>
                      </a>
+
+                     <a href="mailto:pragyanbt2002@gmail.com" class="home__social-link">
+                        <i class="ri-mail-line"></i>
+                     </a>
                   </div>
                </div>
 
                <div class="home__info">
                   <p class="home__description">
-                     <b>Full Stack Java Developer</b>, Passionate developer with expertise in Java development, web technologies, and modern frameworks. Building robust applications with strong foundation in programming languages, algorithms, and data structures.
+                     <b>Full-Stack Software Developer</b> with 6+ years building cloud-native applications in Java, Spring Boot, React.js, Node.js, and Python.
                   </p>
 
                   
@@ -145,8 +149,14 @@
 
                <div class="about__info">
                   <p class="about__description">
-                     A highly motivated and detail-oriented <b>Computer Science student</b> with a strong passion for <b>software development</b> and <b>problem-solving</b>. I have hands-on experience with modern technologies, frameworks, and programming languages, and a solid foundation in <b>data structures, algorithms, and system design</b>. I thrive in collaborative environments and am eager to contribute to innovative projects and deliver impactful solutions as a <b>Full Stack Developer</b>.
+                     Full-Stack Software Developer with 6+ years of software development experience building scalable, cloud-native enterprise applications using Java, Spring Boot, Node.js, Python, and React.js. Experienced with microservices architecture, secure RESTful API design, Spring Security and JWT-based authentication, Spring Data JPA and Hibernate persistence, and event-driven service integration. Demonstrated ability to design layered, maintainable backend systems; optimize relational and document database performance across PostgreSQL, MySQL, and MongoDB; containerize and deploy workloads to AWS; and troubleshoot production issues using structured logging, monitoring, and distributed tracing. Strong background in Agile Scrum delivery, code reviews, automated testing with JUnit and Mockito, API documentation with Swagger/OpenAPI, and Git-based CI/CD promotion pipelines using Jenkins, GitHub Actions, and Harness.
                   </p>
+
+                  <ul class="about__list">
+                     <li>Dallas, TX</li>
+                     <li>B.S. Computer Science, Northern Kentucky University</li>
+                     <li>Java, Spring Boot, React.js, Node.js, Python</li>
+                  </ul>
 
                   <div class="about__buttons">
                      <a href="#contact" class="button">
@@ -169,75 +179,161 @@
 
             <div class="experience__container container">
                <div class="experience__grid">
-                  <!-- Current Experience - Wells Fargo -->
                   <div class="experience__card">
-                     <div class="experience__header">
-                        <i class="ri-briefcase-line experience__icon"></i>
-                        <h3 class="experience__title">Full Stack Java Developer</h3>
+                     <div class="experience__top">
+                        <div class="experience__header">
+                           <i class="ri-briefcase-line experience__icon"></i>
+                           <h3 class="experience__title">Full Stack Java Developer</h3>
+                        </div>
+                        <div class="experience__meta">
+                           <p class="experience__company">Wells Fargo</p>
+                           <p class="experience__duration">May 2022 – Present · Dallas, TX</p>
+                        </div>
                      </div>
                      <div class="experience__content">
-                        <p class="experience__company">Wells Fargo</p>
-                        <p class="experience__duration">May 2024 - Present</p>
-                        <p class="experience__description">
-                           Design, develop, test, and deploy scalable applications using Java, Spring Boot, React.js, 
-                           RESTful APIs, and Microservices architecture in an Agile Scrum environment. Build data pipelines, 
-                           integrate cloud technologies (AWS), and implement CI/CD workflows with Harness.
-                        </p>
+                        <ul class="experience__list">
+                           <li>Designed and developed scalable microservices-based applications using Java and Spring Boot, applying layered controller-service-repository architecture, domain-driven package boundaries, and Spring Data JPA with Hibernate for efficient data access, persistence, and transaction management across business-critical financial workflows.</li>
+                           <li>Built and secured high-performance RESTful APIs using Spring Security and JWT-based authentication, implementing role-based access control, method-level authorization, token refresh handling, and request validation to satisfy enterprise security standards and internal compliance review.</li>
+                           <li>Developed dynamic, responsive user interfaces using React.js, Redux, and modern JavaScript (ES6+), building reusable component libraries, centralized state management, client-side routing, and optimized rendering patterns that improved user experience and reduced page interaction latency.</li>
+                           <li>Optimized complex database queries, indexing strategies, and schema design across PostgreSQL and MySQL using execution-plan analysis, composite indexes, selective projections, and query rewrites, achieving up to 40% improvement in query performance and measurably reduced end-to-end latency.</li>
+                           <li>Integrated MongoDB for high-volume unstructured and semi-structured datasets, designing document models, aggregation pipelines, and flexible schemas that supported analytics, reporting, and evolving business requirements without costly relational migrations.</li>
+                           <li>Engineered service-to-service integrations between internal microservices and downstream enterprise systems using REST clients, JSON serialization, retry with exponential backoff, circuit-breaker style fallbacks, and idempotent request handling to preserve correctness under partial failure.</li>
+                           <li>Containerized applications using Docker, authoring multi-stage builds and standardized base images that produced consistent, reproducible behavior across local development, QA, staging, and production environments while reducing environment-specific defects.</li>
+                           <li>Deployed and managed scalable applications on AWS (EC2, S3, Lambda, RDS), configuring autoscaling, IAM roles and policies, S3 lifecycle rules, and CloudWatch metrics, alarms, and log groups to ensure high availability, observability, and reliable incident response.</li>
+                           <li>Implemented and maintained CI/CD pipelines using GitHub Actions and Harness with Jenkins for automated builds, unit and integration test execution, artifact publishing, and environment promotion, reducing manual intervention and accelerating release cycles.</li>
+                           <li>Designed, tested, and documented APIs using Postman and Swagger (OpenAPI), publishing clear API contracts, request and response schemas, error catalogs, and versioning conventions that simplified onboarding and consumption for downstream teams.</li>
+                           <li>Developed comprehensive unit and integration tests using JUnit and Mockito, covering positive, negative, boundary, and failure-injection scenarios with meaningful assertions on business behavior, improving code coverage, reliability, and early defect detection.</li>
+                           <li>Diagnosed and resolved production incidents through structured logging, CloudWatch metrics, thread and heap analysis, and query profiling, delivering root-cause analyses, targeted hotfixes, and follow-up preventive changes with minimal customer-facing disruption.</li>
+                           <li>Refactored and safely extended mature legacy modules by adding characterization tests, isolating side effects, and incrementally introducing interfaces and dependency injection, enabling new features while preserving established business processes and audit behavior.</li>
+                           <li>Improved application reliability and throughput through connection pooling, caching of read-heavy reference data, asynchronous processing of non-blocking workloads, pagination of large result sets, and elimination of N+1 query patterns in Hibernate mappings.</li>
+                           <li>Partnered with architects and security engineers on design reviews covering data protection, input validation, dependency scanning, secrets management, and secure configuration for applications handling sensitive financial data.</li>
+                           <li>Led and participated in code reviews, established team coding standards, and authored technical documentation, runbooks, and onboarding guides that reduced ramp-up time for new engineers and improved consistency across the codebase.</li>
+                           <li>Collaborated with product managers, QA engineers, and architects in an Agile Scrum environment, contributing to backlog refinement, story estimation, sprint planning, demos, and retrospectives while consistently delivering production-ready increments.</li>
+                           <li>Mentored junior developers and interns on Spring Boot fundamentals, REST design, testing practices, and Git workflows, providing hands-on pairing and structured feedback that accelerated their independent contribution to sprint deliverables.</li>
+                           <li>Built scheduled and batch processing jobs for high-volume data synchronization, file ingestion, and reconciliation workloads, applying chunked processing, checkpointing, and restart-safe semantics to keep long-running executions predictable and recoverable.</li>
+                           <li>Managed database schema evolution through versioned migration scripts and backward-compatible release sequencing, coordinating deployments so that API, schema, and consumer changes could be shipped independently without downtime.</li>
+                           <li>Instrumented services with structured logs, correlation IDs, health endpoints, and custom metrics, building dashboards and alert thresholds that shortened mean time to detection and simplified cross-service debugging in production.</li>
+                        </ul>
                         <div class="experience__highlights">
                            <span class="experience__highlight">Java</span>
                            <span class="experience__highlight">Spring Boot</span>
+                           <span class="experience__highlight">Spring Security</span>
+                           <span class="experience__highlight">Hibernate</span>
                            <span class="experience__highlight">React.js</span>
+                           <span class="experience__highlight">Redux</span>
+                           <span class="experience__highlight">PostgreSQL</span>
+                           <span class="experience__highlight">MySQL</span>
+                           <span class="experience__highlight">MongoDB</span>
                            <span class="experience__highlight">AWS</span>
-                           <span class="experience__highlight">Microservices</span>
-                           <span class="experience__highlight">CI/CD</span>
+                           <span class="experience__highlight">Docker</span>
+                           <span class="experience__highlight">Jenkins</span>
+                           <span class="experience__highlight">GitHub Actions</span>
+                           <span class="experience__highlight">Harness</span>
+                           <span class="experience__highlight">JUnit</span>
+                           <span class="experience__highlight">Mockito</span>
                         </div>
                      </div>
                   </div>
 
-                  <!-- Teaching Assistant Experience -->
+                  <div class="experience__card">
+                     <div class="experience__top">
+                        <div class="experience__header">
+                           <i class="ri-graduation-cap-line experience__icon"></i>
+                           <h3 class="experience__title">Teaching Assistant</h3>
+                        </div>
+                        <div class="experience__meta">
+                           <p class="experience__company">Northern Kentucky University</p>
+                           <p class="experience__duration">Jan 2021 – May 2023 · Highland Heights, KY</p>
+                        </div>
+                     </div>
+                     <div class="experience__content">
+                        <ul class="experience__list">
+                           <li>Assisted faculty in teaching Java, Object-Oriented Programming, and Data Structures &amp; Algorithms to undergraduate students, supporting lectures, office hours, and structured review sessions across multiple semesters and course sections.</li>
+                           <li>Conducted weekly lab sessions focused on real-world problem solving and coding best practices, walking students through requirement analysis, incremental implementation, testing, and refactoring of working solutions.</li>
+                           <li>Guided students in developing applications using core Java and foundational web technologies, covering class design, inheritance, interfaces, collections, exception handling, file I/O, and basic client-server interaction.</li>
+                           <li>Helped students debug code and optimize algorithms for performance, teaching systematic debugging, breakpoint and stack-trace analysis, complexity reasoning, and data-structure selection appropriate to the problem.</li>
+                           <li>Reviewed programming assignments and ensured adherence to coding standards and clean code principles, providing detailed written feedback on naming, decomposition, readability, and correctness.</li>
+                           <li>Mentored students on Git and GitHub workflows, including branching, commits, pull requests, merge-conflict resolution, and collaborative development on shared repositories.</li>
+                           <li>Designed practice exercises and supplemental problem sets that strengthened understanding of data structures, recursion, algorithmic thinking, and time and space complexity analysis.</li>
+                           <li>Conducted mock code reviews and technical discussions modeled on industry practice, preparing students for internship interviews and professional collaboration norms.</li>
+                           <li>Assisted faculty in updating course materials to incorporate modern development practices, including unit testing, version control, and build tooling alongside traditional coursework.</li>
+                           <li>Encouraged collaborative learning through group problem-solving sessions, peer programming exercises, and structured study groups that measurably improved lab completion rates.</li>
+                        </ul>
+                        <div class="experience__highlights">
+                           <span class="experience__highlight">Java</span>
+                           <span class="experience__highlight">OOP</span>
+                           <span class="experience__highlight">Data Structures</span>
+                           <span class="experience__highlight">JUnit</span>
+                           <span class="experience__highlight">Git</span>
+                           <span class="experience__highlight">GitHub</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="experience__card">
+                     <div class="experience__top">
+                        <div class="experience__header">
+                           <i class="ri-server-line experience__icon"></i>
+                           <h3 class="experience__title">Backend Developer</h3>
+                        </div>
+                        <div class="experience__meta">
+                           <p class="experience__company">Global Hub Private Limited</p>
+                           <p class="experience__duration">Jun 2019 – Jun 2021 · Kathmandu, Nepal</p>
+                        </div>
+                     </div>
+                     <div class="experience__content">
+                        <ul class="experience__list">
+                           <li>Developed and maintained backend application functionality using Node.js and Python, supporting internal workflows, data processing, and integration with frontend components.</li>
+                           <li>Integrated React.js frontend interfaces with backend services, coordinating request and response handling and troubleshooting application data flows.</li>
+                           <li>Built Python automation scripts for recurring operational tasks, including file handling, data validation, and report preparation.</li>
+                           <li>Processed and reconciled datasets using Python, Pandas, and NumPy, cleaning and transforming records for internal reporting.</li>
+                           <li>Wrote SQL queries, joins, and aggregations to retrieve, verify, and update application data and support backend functionality.</li>
+                           <li>Assisted with application-to-database integration, connection configuration, schema updates, and validation of data flow across components.</li>
+                           <li>Debugged backend and frontend issues, contributed fixes and enhancements, and documented reproducible issues and resolutions.</li>
+                           <li>Collaborated with developers using Git for version control, code changes, and review workflows; maintained technical documentation for internal applications.</li>
+                        </ul>
+                        <div class="experience__highlights">
+                           <span class="experience__highlight">Node.js</span>
+                           <span class="experience__highlight">Python</span>
+                           <span class="experience__highlight">React.js</span>
+                           <span class="experience__highlight">JavaScript</span>
+                           <span class="experience__highlight">SQL</span>
+                           <span class="experience__highlight">Pandas</span>
+                           <span class="experience__highlight">NumPy</span>
+                           <span class="experience__highlight">Git</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== EDUCATION ====================-->
+         <section class="education section" id="education">
+            <h2 class="section__title-1">
+               <span>Education.</span>
+            </h2>
+
+            <div class="experience__container container">
+               <div class="experience__grid">
                   <div class="experience__card">
                      <div class="experience__header">
                         <i class="ri-graduation-cap-line experience__icon"></i>
-                        <h3 class="experience__title">Teaching Assistant – Python Programming</h3>
+                        <h3 class="experience__title">B.S. in Computer Science</h3>
                      </div>
                      <div class="experience__content">
                         <p class="experience__company">Northern Kentucky University</p>
-                        <p class="experience__duration">January 2022 - May 2023</p>
+                        <p class="experience__duration">Highland Heights, KY</p>
+                        <p class="experience__duration">Minors in CIT and Mathematics</p>
                         <p class="experience__description">
-                           Assisted in delivering introductory and intermediate Python programming courses, guiding over 50+ 
-                           students through data structures, algorithms, and object-oriented programming. Provided one-on-one 
-                           mentorship, conducted code reviews, and facilitated collaborative coding sessions.
+                           Coursework in data structures and algorithms, object-oriented programming, database systems, operating systems, software engineering, web application development, and computer networks.
                         </p>
                         <div class="experience__highlights">
-                           <span class="experience__highlight">Python</span>
-                           <span class="experience__highlight">Teaching</span>
-                           <span class="experience__highlight">Mentorship</span>
-                           <span class="experience__highlight">Git/GitHub</span>
-                           <span class="experience__highlight">NumPy/Pandas</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- Technical Assistant Experience -->
-                  <div class="experience__card">
-                     <div class="experience__header">
-                        <i class="ri-tools-line experience__icon"></i>
-                        <h3 class="experience__title">Technical Assistant (Intern)</h3>
-                     </div>
-                     <div class="experience__content">
-                        <p class="experience__company">Global Hub Private Limited</p>
-                        <p class="experience__duration">June 2019 - June 2020</p>
-                        <p class="experience__description">
-                           Provided technical support for hardware and software installation, configuration, and troubleshooting. 
-                           Assisted in developing Python-based applications to streamline company operations, implemented 
-                           software management protocols, and collaborated with senior developers on application enhancements.
-                        </p>
-                        <div class="experience__highlights">
-                           <span class="experience__highlight">Python</span>
-                           <span class="experience__highlight">Technical Support</span>
-                           <span class="experience__highlight">Software Development</span>
-                           <span class="experience__highlight">Database Integration</span>
-                           <span class="experience__highlight">Version Control</span>
+                           <span class="experience__highlight">Data Structures</span>
+                           <span class="experience__highlight">Databases</span>
+                           <span class="experience__highlight">Operating Systems</span>
+                           <span class="experience__highlight">Software Engineering</span>
+                           <span class="experience__highlight">Networks</span>
                         </div>
                      </div>
                   </div>
@@ -248,186 +344,138 @@
          <!--==================== SKILLS ====================-->
          <section class="skills section">
             <h2 class="section__title-1">
-               <span>My Skills.</span>
+               <span>Technical Skills.</span>
             </h2>
 
             <div class="skills__container container">
-               <div class="skills__grid">
-                  <!-- Java -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-code-s-slash-line"></i>
-                     </div>
-                     <span class="skill__name">Java</span>
-                  </div>
+               <div class="skills__groups">
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-code-s-slash-line" aria-hidden="true"></i>Languages &amp; Core</h3>
+                     <ul class="skills__list">
+                        <li>Java (8/11/17)</li>
+                        <li>Python</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>SQL</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>System Design</li>
+                     </ul>
+                  </article>
 
-                  <!-- Python -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-code-s-slash-line"></i>
-                     </div>
-                     <span class="skill__name">Python</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-server-line" aria-hidden="true"></i>Backend &amp; Frameworks</h3>
+                     <ul class="skills__list">
+                        <li>Spring Boot</li>
+                        <li>Spring MVC</li>
+                        <li>Spring Security</li>
+                        <li>Spring Data JPA</li>
+                        <li>Spring Cloud</li>
+                        <li>Hibernate</li>
+                        <li>JPA</li>
+                        <li>Node.js</li>
+                        <li>Maven</li>
+                        <li>Gradle</li>
+                        <li>Multithreading</li>
+                        <li>Java Streams</li>
+                        <li>Exception Handling</li>
+                     </ul>
+                  </article>
 
-                  <!-- Kotlin -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-code-s-slash-line"></i>
-                     </div>
-                     <span class="skill__name">Kotlin</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-links-line" aria-hidden="true"></i>APIs &amp; Integration</h3>
+                     <ul class="skills__list">
+                        <li>REST APIs</li>
+                        <li>JSON</li>
+                        <li>JWT</li>
+                        <li>OAuth 2.0</li>
+                        <li>Swagger (OpenAPI)</li>
+                        <li>Postman</li>
+                        <li>Service-to-Service Integration</li>
+                        <li>API Versioning</li>
+                        <li>Rate Limiting</li>
+                        <li>Pagination</li>
+                        <li>Idempotent Processing</li>
+                     </ul>
+                  </article>
 
-                  <!-- JavaScript -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-javascript-line"></i>
-                     </div>
-                     <span class="skill__name">JavaScript</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-window-line" aria-hidden="true"></i>Frontend</h3>
+                     <ul class="skills__list">
+                        <li>React.js</li>
+                        <li>Redux</li>
+                        <li>React Hooks</li>
+                        <li>Component-Based Architecture</li>
+                        <li>Responsive UI</li>
+                        <li>Axios</li>
+                        <li>State Management</li>
+                        <li>Form Validation</li>
+                        <li>Accessibility Basics</li>
+                     </ul>
+                  </article>
 
-                  <!-- TypeScript -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-code-s-slash-line"></i>
-                     </div>
-                     <span class="skill__name">TypeScript</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-database-2-line" aria-hidden="true"></i>Databases</h3>
+                     <ul class="skills__list">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Query Optimization</li>
+                        <li>Indexing Strategies</li>
+                        <li>Schema Design</li>
+                        <li>Stored Procedures</li>
+                        <li>Transactions</li>
+                        <li>Connection Pooling</li>
+                        <li>Flyway/Liquibase Migrations</li>
+                     </ul>
+                  </article>
 
-                  <!-- SQL -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-database-line"></i>
-                     </div>
-                     <span class="skill__name">SQL</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-cloud-line" aria-hidden="true"></i>Cloud &amp; DevOps</h3>
+                     <ul class="skills__list">
+                        <li>AWS (EC2, S3, Lambda, RDS, CloudWatch, IAM)</li>
+                        <li>Docker</li>
+                        <li>Jenkins</li>
+                        <li>GitHub Actions</li>
+                        <li>Harness</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Environment Promotion</li>
+                        <li>Blue-Green Deployments</li>
+                     </ul>
+                  </article>
 
-                  <!-- HTML/CSS -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-html5-line"></i>
-                     </div>
-                     <span class="skill__name">HTML/CSS</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-test-tube-line" aria-hidden="true"></i>Testing &amp; Quality</h3>
+                     <ul class="skills__list">
+                        <li>JUnit 5</li>
+                        <li>Mockito</li>
+                        <li>Integration Testing</li>
+                        <li>Test Data Builders</li>
+                        <li>Mock Servers</li>
+                        <li>Code Coverage</li>
+                        <li>Regression Testing</li>
+                        <li>Code Reviews</li>
+                        <li>SonarQube-Style Static Analysis</li>
+                     </ul>
+                  </article>
 
-                  <!-- Hibernate -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-database-2-line"></i>
-                     </div>
-                     <span class="skill__name">Hibernate</span>
-                  </div>
-
-                  <!-- React.js -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-reactjs-line"></i>
-                     </div>
-                     <span class="skill__name">React.js</span>
-                  </div>
-
-                  <!-- PostgreSQL -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-database-2-line"></i>
-                     </div>
-                     <span class="skill__name">PostgreSQL</span>
-                  </div>
-
-                  <!-- MySQL -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-database-2-line"></i>
-                     </div>
-                     <span class="skill__name">MySQL</span>
-                  </div>
-
-                  <!-- AWS -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-cloud-line"></i>
-                     </div>
-                     <span class="skill__name">AWS</span>
-                  </div>
-
-                  <!-- Git -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-git-branch-line"></i>
-                     </div>
-                     <span class="skill__name">Git</span>
-                  </div>
-
-                  <!-- Excel/Numbers/Sheets -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-file-spreadsheet-line"></i>
-                     </div>
-                     <span class="skill__name">Excel/Sheets</span>
-                  </div>
-
-                  <!-- Data Structures & Algorithms -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-flow-chart"></i>
-                     </div>
-                     <span class="skill__name">DSA</span>
-                  </div>
-
-                  <!-- Agile -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-team-line"></i>
-                     </div>
-                     <span class="skill__name">Agile</span>
-                  </div>
-
-                  <!-- SCRUM -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-settings-3-line"></i>
-                     </div>
-                     <span class="skill__name">SCRUM</span>
-                  </div>
-
-                  <!-- Machine Learning -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-brain-line"></i>
-                     </div>
-                     <span class="skill__name">Machine Learning</span>
-                  </div>
-
-                  <!-- NumPy -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-function-line"></i>
-                     </div>
-                     <span class="skill__name">NumPy</span>
-                  </div>
-
-                  <!-- Pandas -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-table-line"></i>
-                     </div>
-                     <span class="skill__name">Pandas</span>
-                  </div>
-
-                  <!-- Microservices -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-server-line"></i>
-                     </div>
-                     <span class="skill__name">Microservices</span>
-                  </div>
-
-                  <!-- OpenShift -->
-                  <div class="skill__card">
-                     <div class="skill__icon">
-                        <i class="ri-cloud-line"></i>
-                     </div>
-                     <span class="skill__name">OpenShift</span>
-                  </div>
+                  <article class="skills__group">
+                     <h3 class="skills__category"><i class="ri-tools-line" aria-hidden="true"></i>Practices &amp; Tools</h3>
+                     <ul class="skills__list">
+                        <li>Microservices Architecture</li>
+                        <li>Agile Scrum</li>
+                        <li>Jira</li>
+                        <li>Confluence</li>
+                        <li>Production Troubleshooting</li>
+                        <li>Monitoring and Logging</li>
+                        <li>Technical Documentation</li>
+                        <li>Pair Programming</li>
+                     </ul>
+                  </article>
                </div>
             </div>
          </section>
@@ -437,168 +485,113 @@
                <span>Projects.</span>
             </h2>
 
-            <div class="projects__container container grid">
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/hospi.jpeg" alt="image" class="projects__img">
+            <div class="projects__wrap container">
+               <div class="projects__featured">
+                  <article class="projects__feature projects__feature--wide">
+                     <div class="projects__gallery">
+                        <img src="assets/img/vusely-home.png" alt="Vusely homepage, with Mia ready to write and publish posts">
+                        <img src="assets/img/vusely-posts.png" alt="Vusely posts page showing published posts and engagement">
+                        <img src="assets/img/vusely-mobile.png" alt="Vusely on a phone, with nothing scheduled and recent likes">
+                     </div>
+                     <div class="projects__feature-body">
+                        <h3 class="projects__subtitle">Founder · Social publishing</h3>
+                        <h2 class="projects__title">Vusely</h2>
+                        <p class="projects__description">
+                           Founded Vusely, a social publishing platform for businesses and creators. People connect Instagram, Facebook, Threads, and TikTok, write posts themselves or with Mia, an AI manager that drafts in their voice, and publish immediately or on a schedule. Built with <b>Next.js</b>, <b>TypeScript</b>, <b>Supabase</b>, <b>PostgreSQL</b>, <b>Inngest</b>, and <b>Stripe</b>, with row-level security, billing, and CI.
+                        </p>
+                        <div class="projects__tags">
+                           <span>Next.js</span>
+                           <span>TypeScript</span>
+                           <span>Supabase</span>
+                           <span>PostgreSQL</span>
+                           <span>Stripe</span>
+                        </div>
+                        <a href="https://www.vusely.com" target="_blank" class="projects__link">
+                           <i class="ri-external-link-line"></i> Live Site
+                        </a>
+                     </div>
+                  </article>
 
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
+                  <article class="projects__feature projects__feature--wide">
+                     <div class="projects__shots">
+                        <img src="assets/img/trivaller-discover.jpg" alt="Trivaller map showing top-rated spots near Adventure Landing Dallas">
+                        <img src="assets/img/trivaller-plan.jpg" alt="Trivaller trip with friends, a packing list, and shared expenses">
+                        <img src="assets/img/trivaller-itinerary.jpg" alt="Trivaller itinerary for a trip to Colorado">
+                     </div>
+                     <div class="projects__feature-body">
+                        <h3 class="projects__subtitle">Agentic AI · Mobile</h3>
+                        <h2 class="projects__title">Trivaller</h2>
+                        <p class="projects__description">
+                           A mobile trip-planning app that uses agentic AI workflows to build an itinerary, discover nearby spots, plan with friends, pack, and split costs. Backend services are <b>Java</b> and <b>Spring Boot</b>, with <b>PostgreSQL</b> for storage and <b>AWS</b> for the cloud infrastructure.
+                        </p>
+                        <div class="projects__tags">
+                           <span>Java</span>
+                           <span>Spring Boot</span>
+                           <span>PostgreSQL</span>
+                           <span>AWS</span>
+                        </div>
+                     </div>
+                  </article>
+               </div>
 
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Java based system</h3>
-                     <h2 class="projects__title">Hospi-Mart</h2>
+               <h3 class="projects__label"><span>More projects.</span></h3>
 
-                     <p class="projects__description">
-                        •	A collaborative project that replicates the functionality of the Hospital Management System, a <b>Java-based</b> platform for storing and sharing hospital data.  
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
+               <div class="projects__more">
+                  <article class="projects__mini">
+                     <div class="projects__image">
+                        <img src="assets/img/hospi.jpeg" alt="Hospi-Mart hospital management system" class="projects__img">
+                     </div>
+                     <div class="projects__content">
+                        <h3 class="projects__subtitle">Java system</h3>
+                        <h2 class="projects__title">Hospi-Mart</h2>
+                        <p class="projects__description">
+                           A collaborative <b>Java</b> hospital management system for storing and sharing hospital data.
+                        </p>
+                     </div>
                      <a href="https://github.com/pragyanbt/Hospi-mart" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
+                  </article>
 
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/dice.jpeg" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Project</h3>
-                     <h2 class="projects__title">Dice Rolling Game</h2>
-
-                     <p class="projects__description">
-                        •	Used <b>Python</b> programming language using all the concepts of curriculum for the course.
-                  </div>
-
-                  <div class="projects__buttons">
+                  <article class="projects__mini">
+                     <div class="projects__image">
+                        <img src="assets/img/project-2.jpg" alt="NutriByte nutrition and workout planner" class="projects__img">
+                     </div>
+                     <div class="projects__content">
+                        <h3 class="projects__subtitle">AI web application</h3>
+                        <h2 class="projects__title">NutriByte</h2>
+                        <p class="projects__description">
+                           An AI chatbot that helps people plan nutrition and workouts. Built with <b>React</b>, <b>TypeScript</b>, and <b>Supabase</b> (PostgreSQL).
+                        </p>
+                     </div>
                      <a href="https://github.com/pragyanbt" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
+                  </article>
 
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/atm.webp" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">App</h3>
-                     <h2 class="projects__title">ATM Master</h2>
-
-                     <p class="projects__description">
-                        •	Developed using <b>Java</b> language specially designed for college use, designing well managed login page, user dashboard for student and faculty member connecting <b>database</b> file of the college record. 
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
+                  <article class="projects__mini">
+                     <div class="projects__image">
+                        <img src="assets/img/protectme.png" alt="ProtectMe emergency mobile app" class="projects__img">
+                     </div>
+                     <div class="projects__content">
+                        <h3 class="projects__subtitle">Mobile app</h3>
+                        <h2 class="projects__title">ProtectMe</h2>
+                        <p class="projects__description">
+                           A <b>Kotlin</b> mobile app for requesting help in an emergency with one tap, with customizable message buttons.
+                        </p>
+                     </div>
                      <a href="https://github.com/pragyanbt" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Web Development</h3>
-                     <h2 class="projects__title">Personal Portfolio</h2>
-
-                     <p class="projects__description">
-                        •	A responsive personal portfolio website built with <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. Features modern design, smooth animations, and contact form functionality.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/pragyanbt" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">AI-Powered Web Application</h3>
-                     <h2 class="projects__title">NutriByte</h2>
-
-                     <p class="projects__description">
-                        •	Developed AI-powered (Chat Bot) web application that helps users plan personalized nutrition and workout routines. Built with <b>React</b>, <b>TypeScript</b>, and <b>Supabase</b> (PostgreSQL), it offers an intuitive and responsive interface for tracking health goals and optimizing wellness through smart planning.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/pragyanbt" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                  </div>
-               </article>
-
-               <article class="projects__card">
-                  <div class="projects__image">
-                     <img src="assets/img/protectme.png" alt="image" class="projects__img">
-
-                     <a href="#" class="projects__button button">
-                        <i class="ri-arrow-right-up-line"></i>
-                     </a>
-                  </div>
-
-                  <div class="projects__content">
-                     <h3 class="projects__subtitle">Mobile App</h3>
-                     <h2 class="projects__title">ProtectMe App</h2>
-
-                     <p class="projects__description">
-                        •	Developed a user-friendly <b>Kotlin</b>-based mobile app aimed at providing immediate assistance during emergencies with a single tap, featuring customizable message buttons for users to communicate specific situations effectively.
-                     </p>
-                  </div>
-
-                  <div class="projects__buttons">
-                     <a href="https://github.com/pragyanbt" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                  </div>
-               </article>
+                  </article>
+               </div>
             </div>
          </section>
 
          <!--==================== CERTIFICATIONS ====================-->
          <section class="certifications section">
             <h2 class="section__title-1">
-               <span>My Certifications.</span>
+               <span>Certifications & Awards.</span>
             </h2>
 
             <div class="certifications__container container">
@@ -651,10 +644,10 @@
                      </div>
                      <div class="certifications__content">
                         <p class="certifications__description">
-                           Java Programming Fundamentals certification from Duke University covering core Java concepts, object-oriented programming, and software development principles.
+                           Java Programming Fundamentals certification from Duke University covering HTML, CSS and JavaScript required for web development.
                         </p>
                         <div class="certifications__details">
-                           <a href="#" class="certifications__verify" target="_blank">Verify Here</a>
+                           <a href="https://www.coursera.org/account/accomplishments/verify/77CDPPCQIV6Q" class="certifications__verify" target="_blank">Verify Here</a>
                            <span class="certifications__issuer">Duke University</span>
                         </div>
                      </div>
@@ -670,11 +663,47 @@
                      </div>
                      <div class="certifications__content">
                         <p class="certifications__description">
-                           AWS Certified Cloud Practitioner demonstrating foundational knowledge of AWS cloud services and architecture.
+                           AWS Certified Cloud Practitioner (2024), covering AWS cloud concepts, core services, security, and architectural best practices.
                         </p>
                         <div class="certifications__details">
-                           <a href="#" class="certifications__verify" target="_blank">Verify Here</a>
+                           <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/39c8fae707a24bc7a70d7e38a9c43acd" class="certifications__verify" target="_blank">Verify Here</a>
                            <span class="certifications__issuer">Amazon Web Services</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="certifications__card">
+                     <div class="certifications__image">
+                        <img src="assets/img/fidelity-hackathon.jpg" alt="Team photo at the Fidelity NKU Hackathon in front of the Fidelity LEAP screen" class="certifications__img certifications__img--photo">
+                     </div>
+                     <div class="certifications__header">
+                        <i class="ri-trophy-line certifications__icon"></i>
+                        <h3 class="certifications__title">Fidelity Hackathon — 1st Runner-Up</h3>
+                     </div>
+                     <div class="certifications__content">
+                        <p class="certifications__description">
+                           Co-developed BudgetBuddy, a financial literacy web application, and placed second among 20+ teams.
+                        </p>
+                        <div class="certifications__details">
+                           <span class="certifications__issuer">Northern Kentucky University, 2023</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="certifications__card">
+                     <div class="certifications__image certifications__image--icon">
+                        <i class="ri-trophy-line"></i>
+                     </div>
+                     <div class="certifications__header">
+                        <i class="ri-trophy-line certifications__icon"></i>
+                        <h3 class="certifications__title">Trinity Hackathon — Best UI/UX</h3>
+                     </div>
+                     <div class="certifications__content">
+                        <p class="certifications__description">
+                           Designed a mobile application that received the Best UI/UX Award.
+                        </p>
+                        <div class="certifications__details">
+                           <span class="certifications__issuer">Kathmandu, 2020</span>
                         </div>
                      </div>
                   </div>
@@ -755,11 +784,12 @@
                   </h2>
 
                   <p class="contact__description-1">
-                     Please contact me on my social networks. I do not get message if you send from here.
+                     Based in Dallas, TX. Email and LinkedIn are the best way to reach me.
                   </p>
 
                   <p class="contact__description-2">
-                     Lets get connected in <b>Linked In</b> and <b>Instagram</b>.
+                     <a href="mailto:pragyanbt2002@gmail.com">pragyanbt2002@gmail.com</a><br>
+                     +1 (940) 373-2057
                   </p>
 
                   <div class="geometric-box"></div>
@@ -807,23 +837,19 @@
                   <div class="contact__social-data">
                      <div>
                         <p class="contact__social-description-1">
-                           It is better to contact me on my social networks.
+                           Email and LinkedIn are the fastest way to reach me.
                         </p>
    
                         <p class="contact__social-description-2">
-                           Write me on my social networks
+                           Dallas, TX
                         </p>
                      </div>
 
                      <div class="contact__social-links">
-                        <a href="https://www.facebook.com/pragyan.budhathoki.73" class="contact__social-link" target="_blank">
-                           <i class="ri-facebook-circle-line"></i>
+                        <a href="mailto:pragyanbt2002@gmail.com" class="contact__social-link">
+                           <i class="ri-mail-line"></i>
                         </a>
-   
-                        <a href="https://www.instagram.com/pragyan_bt/" class="contact__social-link" target="_blank">
-                           <i class="ri-instagram-line"></i>
-                        </a>
-   
+
                         <a href="https://www.linkedin.com/in/pragyan-budhathoki/" class="contact__social-link" target="_blank">
                            <i class="ri-linkedin-box-line"></i>
                         </a>
@@ -844,6 +870,10 @@
 
                <li>
                   <a href="#about" class="footer__link">About</a>
+               </li>
+
+               <li>
+                  <a href="#experience" class="footer__link">Experience</a>
                </li>
 
                <li>
